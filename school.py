@@ -12,13 +12,10 @@ def students_from_city(db, city):
     # Fetch results
     results = db.fetchall()
 
-    # Close con
-    conn.close()
-
     return results
 
 
-import sqlite3
-conn = sqlite3.connect('data/school.sqlite')
-db = conn.cursor()
-print(students_from_city(db, 'Paris'))
+# import sqlite3
+# conn = sqlite3.connect('data/school.sqlite')
+# db = conn.cursor()
+# print(students_from_city(db, 'Paris'))
